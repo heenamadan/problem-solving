@@ -1,0 +1,31 @@
+Using Hash Map
+
+This solu­tion will work even if all the num­bers are not in the range of 1 to n.
+Keep the count of each ele­ment in the Hash Map.
+Print the ele­ments which has count = 2.
+Time Com­plex­ity: O(N),  Space Com­plex­ity: O(N)
+
+
+
+Native Approach:
+Naive: This prob­lem can be eas­ily solved using two nested loops. Take each ele­ment at a time and com­pare it with all the other ele­ments and if it appears twice, print it. This solu­tion will work even if all the num­bers are not in the range of 1 to n.
+
+Time com­plex­ity is O(N^2).
+
+
+Using Sort­ing
+
+This solu­tion will work even if all the num­bers are not in the range of 1 to n.
+Sort the array, this will bring all the repeated ele­ments together.
+Now tra­verse the array and com­pare the adja­cent ele­ments and print them if they are same.
+Time Com­plex­ity: O(nlogn),  Space Com­plex­ity: O(1)
+
+Array ele­ment as index
+
+This solu­tion works only if array has pos­i­tive inte­gers and all the ele­ments in the array are in range from 1 to n.
+Nav­i­gate the array.
+Update the array as for ith index :- A[abs(A[i])] = A[abs(A[i])] * –1;
+(If it already not negative).
+If A[x] is already neg­a­tive, then it means we are vis­it­ing it sec­ond time, means it is repeated.
+Sim­i­lar approach used in prob­lem : If array has all con­sec­u­tive numbers.
+Time Com­plex­ity: O(N),  Space Com­plex­ity: O(1)

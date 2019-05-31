@@ -1,0 +1,8 @@
+Better Approach: Time Com­plex­ity — O(n).
+
+Find the range = y-x;
+Do the lin­ear scan of array.
+Check if ele­ment falls within the range of x and y, (arrA[i]>=x && arrA[i]<=y)
+If Yes then cal­cu­late z = arrA[i]-x;
+Make the arrA[z] ele­ment as negative.
+Once the lin­ear scan is done, just check all the ele­ments in arrA[] from 0 to range are neg­a­tive, if yes them array con­tains all the num­bers of the given range, return true, else false.
